@@ -54,10 +54,10 @@ const Home = ({ dimensions }) => {
     homeAnimation(completeAnimation);
   }, []);
 
-  useEffect(() => {
-    let vh = dimensions.height * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-  }, [dimensions.width]);
+  // useEffect(() => {
+  //   let vh = dimensions.height * 0.01;
+  //   document.documentElement.style.setProperty("--vh", `${vh}px`);
+  // }, [dimensions.width]);
 
   return (
     <>
