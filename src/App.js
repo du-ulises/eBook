@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Route } from "react-router-dom";
 import { gsap } from "gsap";
+import SimpleReactLightbox from "simple-react-lightbox";
 import "./styles/App.scss";
 import Header from "./components/header";
 import Navigation from "./components/navigation";
@@ -14,9 +15,13 @@ import Home from "./pages/home";
 const routes = [
   { path: "/", name: "Home", Component: Home },
   { path: "/web-design", name: "web-design", Component: WebDesign },
-  { path: "/social-media-design", name: "social-media-design", Component: SocialMediaDesign },
+  {
+    path: "/social-media-design",
+    name: "social-media-design",
+    Component: SocialMediaDesign,
+  },
   { path: "/renders", name: "renders", Component: Renders },
-  { path: "/illustrations", name: "illustrations", Component: Illustrations }
+  { path: "/illustrations", name: "illustrations", Component: Illustrations },
 ];
 
 function debounce(fn, ms) {
@@ -33,7 +38,7 @@ function debounce(fn, ms) {
 function App() {
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
-    width: window.innerWidth
+    width: window.innerWidth,
   });
 
   useEffect(() => {
@@ -42,7 +47,7 @@ function App() {
     const debouncedHandleResize = debounce(function handleResize() {
       setDimensions({
         height: window.innerHeight,
-        width: window.innerWidth
+        width: window.innerWidth,
       });
     }, 1000);
 
@@ -52,9 +57,9 @@ function App() {
     };
   });
   return (
-    <>
+    <SimpleReactLightbox>
       <Header dimensions={dimensions} />
-      <div className='App'>
+      <div className="App">
         {routes.map(({ path, Component }) => (
           <Route key={path} exact path={path}>
             <Component dimensions={dimensions} />
@@ -62,7 +67,7 @@ function App() {
         ))}
       </div>
       <Navigation />
-    </>
+    </SimpleReactLightbox>
   );
 }
 

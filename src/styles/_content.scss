@@ -1,0 +1,184 @@
+.content {
+  margin: 60px auto;
+  @media (max-width: 768px) {
+    margin: 20px auto;
+  }
+
+  img {
+    cursor: pointer;
+  }
+
+  .col-text {
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      width: 100%;
+      text-transform: uppercase;
+      line-height: 4rem;
+      margin: 20px 0;
+      @media (max-width: 768px) {
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+    }
+  }
+
+  .col-text-broken,
+  .col-image-broken {
+    margin: 30px 0;
+  }
+
+  .col-image {
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 400px;
+    }
+  }
+
+  .col-image-small {
+    margin: 30px 0;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 300px;
+    }
+  }
+
+  .col-image-large {
+    margin: 30px 0;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 700px;
+    }
+  }
+
+  .col-image-half {
+    margin: 30px 0;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 500px;
+    }
+  }
+
+  // Gallery with link
+  .col-image-with-link {
+    margin-bottom: 20px;
+    a {
+      display: block;
+    }
+  }
+}
+
+// Wrapper for instructions
+.instructions {
+  padding: 30px 0;
+  background-color: lighten(#313e50, 0);
+  color: white;
+  .instruction {
+    border-left: 3px solid var(--light-color);
+    padding-left: 15px;
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+
+    input {
+      width: auto;
+      margin: 10px 0;
+      border: 2px solid var(--light-color);
+      padding: 5px;
+    }
+
+    a {
+      color: var(--light-color);
+      margin: 15px 0;
+      font-weight: bold;
+      display: block;
+      text-decoration: underline;
+      &:hover {
+        color: darken(#f4f4f4, 30%);
+      }
+    }
+  }
+}
+
+// Slick demo
+#container-with-slick {
+  .slick-prev,
+  .slick-next {
+    &:before {
+      color: var(--dark-color);
+    }
+  }
+}
+
+// Custom Captions
+.myCustomCaptionOne,
+.myCustomCaptionTwo {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    color: #33673b;
+    font-weight: 700;
+    font-size: 30px;
+  }
+}
+
+.SRLCustomCaption .myCustomButton {
+  padding: 10px 20px;
+  background-color: #33673b;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  transition: 0.3s ease;
+  will-change: transform, background-color;
+
+  &:hover {
+    text-decoration: none;
+    background-color: darken(#33673b, 10);
+    transform: scale(1.1);
+  }
+}
+
+.img-gallery {
+  cursor: pointer;
+  transition: 0.4s cubic-bezier(0.6, -0.05, 0.1, 0.99);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.row-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+.col-5 {
+  width: calc(100% / 5);
+}
+.col-2 {
+  width: calc(100% / 6);
+}
+.col-3 {
+  width: calc(100% / 4);
+}
+.col-4 {
+  width: calc(100% / 3);
+}
+.col-6 {
+  width: calc(100% / 2);
+}
+.col-12 {
+  width: calc(100% / 1);
+}
