@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Route } from "react-router-dom";
+import { Redirect, Route } from "react-router-dom";
 import { gsap } from "gsap";
 import SimpleReactLightbox from "simple-react-lightbox";
 import "./styles/App.scss";
@@ -65,6 +65,9 @@ function App() {
             <Component dimensions={dimensions} />
           </Route>
         ))}
+        <Redirect>
+          <Home dimensions={dimensions} />
+        </Redirect>
       </div>
       <Navigation />
     </SimpleReactLightbox>
