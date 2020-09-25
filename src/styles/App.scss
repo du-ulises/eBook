@@ -16,11 +16,12 @@
     url("../fonts/LemonMilklight.woff") format("woff");
 }
 @font-face {
-  font-family: 'Lemon/Milk light italic';
+  font-family: "Lemon/Milk light italic";
   font-style: normal;
   font-weight: normal;
-  src: local('Lemon/Milk light italic'), url('../fonts/LemonMilklightitalic.woff') format('woff');
-  }
+  src: local("Lemon/Milk light italic"),
+    url("../fonts/LemonMilklightitalic.woff") format("woff");
+}
 @import "./varibles.scss";
 @import "./breakpoints.scss";
 @import "./_content.scss";
