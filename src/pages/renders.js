@@ -65,7 +65,7 @@ const options = {
   progressBar: {
     height: "3px",
     fillColor: "#FFF",
-    backgroundColor: "#33673B",
+    backgroundColor: "#fc9ccb",
   },
 };
 

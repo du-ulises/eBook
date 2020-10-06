@@ -64,7 +64,7 @@ const HomeFeatured = ({ dimensions, video, title, subtitle }) => {
               <h1>Cargando</h1>
             </div>
           )}
-          <video loop autoPlay onLoadedData={onLoadedData} src={video}></video>
+          <video controls onLoadedData={onLoadedData} src={video}></video>
           <h2 className="featured-title">
             {title}
             <span className="arrow">

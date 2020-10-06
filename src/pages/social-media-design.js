@@ -169,7 +169,7 @@ const options = {
   progressBar: {
     height: "3px",
     fillColor: "#FFF",
-    backgroundColor: "#ef9886",
+    backgroundColor: "#fc9ccb",
   },
 };
 const Social = ({ dimensions }) => {
