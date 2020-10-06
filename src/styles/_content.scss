@@ -125,7 +125,7 @@
   align-items: center;
 
   span {
-    color: #33673b;
+    color: 	#fc9ccb;
     font-weight: 700;
     font-size: 30px;
   }
@@ -133,7 +133,7 @@
 
 .SRLCustomCaption .myCustomButton {
   padding: 10px 20px;
-  background-color: #33673b;
+  background-color: 	#fc9ccb;
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -143,7 +143,7 @@
 
   &:hover {
     text-decoration: none;
-    background-color: darken(#33673b, 10);
+    background-color: darken(	#fc9ccb, 10);
     transform: scale(1.1);
   }
 }
@@ -153,6 +153,16 @@
   transition: 0.4s cubic-bezier(0.6, -0.05, 0.1, 0.99);
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.fab-kirby {
+  cursor: pointer;
+  transition: 0.4s cubic-bezier(0.6, -0.05, 0.1, 0.99);
+  height: 1rem;
+  width: 1rem;
   object-fit: cover;
   &:hover {
     transform: scale(1.05);

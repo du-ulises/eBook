@@ -1,5 +1,6 @@
 import React from "react";
-import { ReactComponent as RightArrow } from "../assets/arrow-right.svg";
+import { ReactComponent as RightArrow } from "../assets/icon-download.svg";
+import CV from "../resources/CV Cesar E. Escamilla Barrera.pdf"
 
 const Banner = () => {
   return (
@@ -15,7 +16,7 @@ const Banner = () => {
             </div>
           </h2>
           <div className='btn-row'>
-            <a href='/'>
+            <a href={CV} download target="_blank">
               Conoce más <RightArrow />
             </a>
           </div>

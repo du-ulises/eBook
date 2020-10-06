@@ -36,9 +36,7 @@ const Navigation = () => {
             <div className="nav-infos">
               <ul className="nav-info">
                 <li className="nav-info-label">Email</li>
-                <li>
-                  kirby@gmail.com
-                </li>
+                <li>LMICEB@gmail.com</li>
               </ul>
               <ul className="nav-info">
                 <li className="nav-info-label">Ubicación</li>

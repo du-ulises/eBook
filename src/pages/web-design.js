@@ -19,6 +19,7 @@ import img16 from "../assets/images/gallery/Diseño Web/img16.png";
 import img17 from "../assets/images/gallery/Diseño Web/img17.png";
 import img18 from "../assets/images/gallery/Diseño Web/img18.png";
 import img19 from "../assets/images/gallery/Diseño Web/img19.png";
+import img20 from "../assets/images/gallery/Diseño Web/img20.png";
 
 const captionOne = (
   <div class="myCustomCaptionOne">
@@ -142,7 +143,7 @@ const CaseStudies = ({ dimensions }) => {
                 <img src={img05} className="img-gallery" alt="" />
               </div>
               <div className="col-4">
-                <img src={img04} className="img-gallery" alt="" />
+                <img src={img20} className="img-gallery" alt="" />
               </div>
             </div>
           </div>

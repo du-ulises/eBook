@@ -59,6 +59,11 @@ import img52 from "../assets/images/gallery/Diseño Redes Sociales/img52.png";
 import img53 from "../assets/images/gallery/Diseño Redes Sociales/img53.png";
 import img54 from "../assets/images/gallery/Diseño Redes Sociales/img54.png";
 import img55 from "../assets/images/gallery/Diseño Redes Sociales/img55.png";
+import img56 from "../assets/images/gallery/Diseño Redes Sociales/img56.png";
+import img57 from "../assets/images/gallery/Diseño Redes Sociales/img57.png";
+import img58 from "../assets/images/gallery/Diseño Redes Sociales/img58.png";
+import img59 from "../assets/images/gallery/Diseño Redes Sociales/img59.png";
+import img60 from "../assets/images/gallery/Diseño Redes Sociales/img60.png";
 
 const captionOne = (
   <div class="myCustomCaptionOne">
@@ -138,6 +143,11 @@ const customCaptions = [
   { id: 53, caption: captionOne },
   { id: 54, caption: captionOne },
   { id: 55, caption: captionOne },
+  { id: 56, caption: captionOne },
+  { id: 56, caption: captionOne },
+  { id: 57, caption: captionOne },
+  { id: 58, caption: captionOne },
+  { id: 59, caption: captionOne },
 ];
 
 const options = {
@@ -170,10 +180,25 @@ const Social = ({ dimensions }) => {
           <div className="row">
             <div className="row-gallery">
               <div className="col-5">
-                <img src={img01} className="img-gallery" alt="" />
+                <img src={img56} className="img-gallery" alt="" />
+              </div>
+              <div className="col-5">
+                <img src={img58} className="img-gallery" alt="" />
+              </div>
+              <div className="col-5">
+                <img src={img59} className="img-gallery" alt="" />
+              </div>
+              <div className="col-5">
+                <img src={img57} className="img-gallery" alt="" />
+              </div>
+              <div className="col-5">
+                <img src={img60} className="img-gallery" alt="" />
               </div>
               <div className="col-5">
                 <img src={img02} className="img-gallery" alt="" />
+              </div>
+              <div className="col-5">
+                <img src={img01} className="img-gallery" alt="" />
               </div>
               <div className="col-5">
                 <img src={img03} className="img-gallery" alt="" />
@@ -272,14 +297,13 @@ const Social = ({ dimensions }) => {
                 <img src={img42} className="img-gallery" alt="" />
               </div>
 
-              
               <div className="col-6">
                 <img src={img44} className="img-gallery" alt="" />
               </div>
               <div className="col-6">
                 <img src={img45} className="img-gallery" alt="" />
               </div>
-              
+
               <div className="col-5">
                 <img src={img31} className="img-gallery" alt="" />
               </div>

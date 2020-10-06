@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { withRouter } from "react-router-dom";
 import { ReactComponent as UpArrow } from "../assets/up-arrow-circle.svg";
 import { openMenu, closeMenu } from "../animations/menuAnimations";
+import Fab from "../assets/Fabicon Kirby.png"
 
 // Define reducer
 
@@ -26,7 +27,7 @@ const Header = ({ history, dimensions }) => {
         <div className="row v-center space-between">
           <div className={menuState.menuOpened ? "logo-white" : "logo"}>
             <NavLink to="/" exact>
-              CÉSAR ESCAMILLA - eBook
+              CÉSAR ESCAMILLA <img src={Fab} className="fab-kirby" alt="" /> eBook
             </NavLink>
           </div>
           <div className="nav-toggle">
